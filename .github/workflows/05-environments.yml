@@ -27,7 +27,7 @@ jobs:
         az ml job create --file src/job.yml --stream 
 
   production:
-    neeed: experiment
+    needs: experiment
     runs-on: ubuntu-latest
     environment: 
       name: production
