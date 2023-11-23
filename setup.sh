@@ -37,3 +37,7 @@ az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-ins
 # Create data asset
 echo "Creating a data asset with name: diabetes-dev-folder"
 az ml data create --name diabetes-dev-folder --path ./experimentation/data/
+
+# Create production data asset
+echo "Creating a production data asset with name: diabetes-prod-folder"
+az ml data create --name diabetes-prod-folder --path ./production/data/
