@@ -1,4 +1,4 @@
-name: Manually trigger an Azure Machine Learning job
+name: Train in development and production environments
 
 on: 
   push:
