@@ -1,0 +1,11 @@
+name: Dummy action to run when PR is made
+
+on: [pull_request]
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Placeholder
+      run: |
+        echo "Dummy echo command"
