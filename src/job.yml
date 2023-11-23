@@ -10,6 +10,6 @@ inputs:
     path: azureml:diabetes-dev-folder:1
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: cibeZSm8vAT4
+compute: aml-cluster-hanna
 experiment_name: mlops-learning-train
 description: Training mlops learning diabetes model

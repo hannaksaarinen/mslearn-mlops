@@ -10,8 +10,8 @@ RESOURCE_GROUP="rg-mlops-hanna-l${suffix}"
 RESOURCE_PROVIDER="Microsoft.MachineLearning"
 REGION="swedencentral"
 WORKSPACE_NAME="mlw-mlops-hanna-l${suffix}"
-COMPUTE_INSTANCE="ci${suffix}"
-# COMPUTE_CLUSTER="aml-cluster"
+COMPUTE_INSTANCE="compute-instance-hanna"
+COMPUTE_CLUSTER="aml-cluster-hanna"
 
 # Register the Azure Machine Learning resource provider in the subscription
 echo "Register the Machine Learning resource provider:"
@@ -31,8 +31,8 @@ echo "Creating a compute instance with name: " $COMPUTE_INSTANCE
 az ml compute create --name ${COMPUTE_INSTANCE} --size STANDARD_DS11_V2 --type ComputeInstance
 
 # # Create compute cluster
-# echo "Creating a compute cluster with name: " $COMPUTE_CLUSTER
-# az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute 
+echo "Creating a compute cluster with name: " $COMPUTE_CLUSTER
+az ml compute create --name ${COMPUTE_CLUSTER} --size STANDARD_DS11_V2 --max-instances 2 --type AmlCompute 
 
 # Create data asset
 echo "Creating a data asset with name: diabetes-dev-folder"
