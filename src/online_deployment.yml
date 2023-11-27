@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: endpoint-deployment-hanna
+endpoint_name: mlops-endpoint-hanna
+model: azureml:mlops-learn-model-dev:1
+instance_type: Standard_E2s_v3
+instance_count: 1
